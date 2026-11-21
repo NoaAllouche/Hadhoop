@@ -42,6 +42,8 @@ It counts the intermediate map outputs merged by the reducers. In these runs, ea
 The change is in the mapper. We convert each word to lowercase and remove trailing commas and periods using `word.lower().rstrip('.,')`. Empty tokens are skipped. This ensures that different forms of the same word are grouped under the same key before the reduce phase. The reducer remains unchanged.
 
 ### Q2. our code
+•⁠  ⁠[mapper.py](mapper.py)
+•⁠  ⁠[reducer.py](reducer.py)
 
 The number of distinct output words decreased from 77,928 to 54,591.
 
@@ -52,6 +54,8 @@ The number of distinct output words decreased from 77,928 to 54,591.
 The change is in the reducer. It calculates the total count of each word, sorts the results by count in descending order, and outputs only the first three entries. We use one reducer (`-numReduceTasks 1`) to obtain the global top three words rather than a separate top three from each partition. The mapper is unchanged from Exercise 2.
 
 ### Q2. our code
+•⁠  ⁠[mapper.py](mapper.py)
+•⁠  ⁠[reducer.py](reducer.py)
 
 ### Q3. Print the output of the MapReduce and put it on GitHub as an image.
 
