@@ -55,7 +55,7 @@ The change is in the reducer. It calculates the total count of each word, sorts 
 
 ### Q2. our code
 •⁠  ⁠[mapper.py](mapper.py)
-•⁠  ⁠[reducer.py](reducer3.py)
+•⁠  ⁠[reducer3.py](reducer3.py)
 
 ### Q3. Print the output of the MapReduce and put it on GitHub as an image.
 
